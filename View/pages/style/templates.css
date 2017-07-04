@@ -1,31 +1,62 @@
+/********************General*******************/
 body {
     display: block;
+    border-width: 3px;
 }
 
+/********************Header*********************/
 .header_panel {
-    height: 20%;
+    height: 160px;
     border-bottom-style: solid;
+    background-color: #DCDCDC;
 }
 
-.page_selection_panel {
-    height: 60%;
+/*****************Pages selection***************/
+.pages_selection_panel {
     width: 20%;
     float: left;
     border-bottom-style: solid;
     border-right-style: solid;
+    box-sizing: border-box;
+    background-color: red;
+    padding: 10px;
 }
 
-.template_selection_panel {
-    height: 60%;
+.selection_button {
+    height: 30px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 2px, 5px, 2px, 5px;
+    font-size: 20px;
+}
+
+/***************Templates selection**************/
+.templates_selection_panel {
     width: 80%;
+    /*margin: 3%, 2%, 3%, 1%;*/
+    color: yellow;
     float: right;
+    background-color: blue;
 }
 
+.templates_selection_panel_header {
+    height: 15%;
+}
+
+/******************Scroll panel******************/
 .scroll_panel {
-    height: 10%;
+    height: 90px;
     clear: left;
+    background-color: green;
 }
 
+/*********************Footer*********************/
 .footer {
-    height: 10%;
+    height: 90px;
+    background-color: yellow;
+}
+
+/**********************Groups********************/
+.column {
+    height: 600px;
 }
