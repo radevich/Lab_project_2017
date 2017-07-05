@@ -2,34 +2,37 @@
 <html>
     <head>
         <title>Шаблоны</title>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" lang="ru">
         <link rel="stylesheet" href="./style/normalize.css" />
         <link rel="stylesheet" href="./style/templates.css" />
         <link rel="stylesheet" href="./style/font-awesome-4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header>
-            <div class="logo">
+            <a href="">
+                <div class="logo">
 
-            </div>
+                </div>
+            </a>
             <div class="user">
                 <i class="fa fa-user" aria-hidden="true"></i>
                 <div class="user_text">
-                    <p>Привет, Админ</p>
+                    <span>Привет, Админ</span>
                 </div>
                 <i class="fa fa-caret-down" aria-hidden="true"></i>
             </div>
             <a href="">
                 <div class="about_company">
-                    <h2>О компании</h2>
+                    <span>О компании</span>
                 </div>
             </a>
         </header>
+
         <div class="container">
             <div class="navigation column">
                 <ul>
                     <li>
-                        <a href="">
+                        <a href="" >
                             <div class="bordered selection_button">
                                 <p>Новый опрос</p>                
                             </div>
@@ -59,10 +62,21 @@
                 </ul>
             </div>
             <div class="templates_selection column">
-                <!--TODO: replace by one dynamically creating template-->
                 <div class="templates_selection_header">
-
+                    <div class="template_text">
+                        <h2>Шаблоны</h2>
+                    </div>
+                    <a href="">
+                        <div class="bordered add_button">
+                            <p>Новый шаблон</p>
+                        </div>
+                    </a>
+                    <div class="search_box">
+                      <span class="icon"><i class="fa fa-search"></i></span>
+                      <input type="search" id="search" placeholder="Search..." />
+                    </div>
                 </div>
+                <!--TODO: replace by one dynamically creating template-->
                 <div class="template_item">
                     <h2>Шаблон 1</h2>
                     <div class="text">
@@ -148,11 +162,20 @@
                     </div>                  
                 </div>
                 <div class="scroll_panel">
+                    <div class="stat">
+                        <span>Всего шаблонов: 100</span>
+                    </div>
+                    <div class="navigate_buttons">
+                        <a href=""><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
         <footer>
-
+            <a href=""><span>Copyright &copy; 2017 iTechArt</span></a>
         </footer>
     </body>
 </html>
