@@ -2,27 +2,36 @@
 body {
     display: block;
     border-width: 3px;
+    text-align: center;
 }
 
 a {
     text-decoration: none;
     color: black;
 } 
+
+ul {
+    list-style-type: none;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-padding-start: 0px;
+}
 /********************Header*********************/
-.header_panel {
+header {
     height: 160px;
     border-bottom-style: solid;
     background-color: #DCDCDC;
 }
 
 /*****************Pages selection***************/
-.pages_selection_panel {
-    width: 15%;
+.navigation {
+    width: 230px;
     float: left;
     border-bottom-style: solid;
     border-right-style: solid;
     background-color: red;
-    padding: 10px;   
+    padding: 10px;  
+    height: 700px; 
 }
 
 .selection_button {
@@ -30,37 +39,47 @@ a {
     min-width: 200px;
     padding: 2px 5px 2px 5px;
     margin-top: 20px;
-    text-align: center;
 }
 
 .selection_button p {
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
     font-size: 22px;
-    vertical-align: middle;
 }
 
 /***************Templates selection**************/
-.templates_selection_panel {
-    width: 85%;
+.templates_selection {
     padding: 20px;
+    /*width: 1670px;*/
     color: yellow;
-    float: right;
     background-color: blue;
+    display: inline-block;
 }
 
-.templates_selection_panel_header {
+.templates_selection_header {
     height: 47px;
     background-color: orange;
 }
 
 .template_item {
-    width: 30%;
-    min-width: 350px;
+    width: 350px;
+    /*min-width: 350px;*/
     height: 250px;
     margin: 18px;
     background-color: pink;
     float: left;
+    color: black;
+}
+
+.questions_count {
+    float: left;
+    width: 50%;
+    min-width: 100px;
+}
+
+.pages_count {
+    float: right;
+    width: 50%;
 }
 
 /******************Scroll panel******************/
@@ -71,14 +90,13 @@ a {
 }
 
 /*********************Footer*********************/
-.footer {
+footer {
     height: 90px;
     background-color: yellow;
 }
 
 /**********************Groups********************/
 .column {
-    height: 650px;
     box-sizing: border-box;
 }
 
