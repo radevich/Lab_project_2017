@@ -27,7 +27,7 @@ header {
     height: 110px;
     border-bottom-style: solid;
     background-color: #DCDCDC;
-    padding: 10px 30px 10px 10px;
+    padding: 10px 60px 10px 10px;
 }
 
 .logo {
@@ -78,15 +78,16 @@ header {
 }
 
 .selection_button {
-    height: 35px;
+    height: auto;
+    min-height: 35px;
     min-width: 200px;
     width: auto;
     padding: 2px 5px 2px 5px;
     margin-top: 20px;
 }
 
-.selection_button p {
-    font-size: 22px;
+.selection_button span {
+    font-size: 20px;
 }
 
 /***************Templates selection**************/
@@ -97,6 +98,9 @@ header {
 
 .templates_selection_header {
     height: 47px;
+    min-width: 550px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .template_text {
@@ -106,15 +110,17 @@ header {
 
 .template_text h2 {
     width: 120px;
+    margin-right: 20px;
 }
 
 .add_button {
-    width: 145px;
+    width: auto;
+    min-width: 145px;
     padding: 3px 2px 3px 2px;
     float: left;
 }
 
-.add_button p {
+.add_button span {
     font-size: 18px;
 }
 
@@ -142,8 +148,8 @@ textarea:focus, .search_box input:focus {
 }
 
 .template_item {
-    width: 370px;
-    height: 250px;
+    width: 420px;
+    height: 280px;
     margin: 18px;
     float: left;
     border: 3px solid black;
@@ -154,28 +160,37 @@ textarea:focus, .search_box input:focus {
 }
 
 .text {
-    height: 150px;
+    height: 143px;
     overflow: auto;
     padding: 0px 3px 0px 3px;
+}
+
+.counters_container {
+    height: 30px;
+    width: 100%;
+    padding-top: 5px;
+    font-size: 18px;
 }
 
 .questions_count {
     float: left;
     width: 50%;
     min-width: 100px;
-    margin-top: 10px;
 }
 
 .pages_count {
     float: right;
     width: 50%;
-    margin-top: 10px;
 }
 
 .create_voting_button {
-    width: 200px;
-    height: auto;
+    width: auto;
+    min-width: 125px;
+    padding: 3px 2px 3px 2px;
+    display: inline-block;
+    font-size: 18px;
 }
+
 
 /******************Scroll panel******************/
 .scroll_panel {
@@ -191,7 +206,7 @@ textarea:focus, .search_box input:focus {
 .navigate_buttons {
     font-size: 25px;
     float: right;
-    margin-right: 30px;
+    margin-right: 40px;
 }
 
 /*********************Footer*********************/
