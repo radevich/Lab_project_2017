@@ -23,15 +23,19 @@ header {
     background-color: #DCDCDC;
 }
 
+.container {
+    height: auto;
+    float: left;
+    display: flex;
+}
+
 /*****************Pages selection***************/
 .navigation {
     width: 230px;
-    float: left;
     border-bottom-style: solid;
     border-right-style: solid;
     background-color: red;
     padding: 10px;  
-    height: 700px; 
 }
 
 .selection_button {
