@@ -4,6 +4,7 @@ body {
     border-width: 3px;
     text-align: center;
     min-width: 660px;
+    color: black;
 }
 
 a {
@@ -13,29 +14,62 @@ a {
 
 ul {
     list-style-type: none;
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
     -webkit-padding-start: 0px;
 }
 /********************Header*********************/
 header {
-    height: 160px;
+    height: 110px;
     border-bottom-style: solid;
     background-color: #DCDCDC;
+    padding: 10px;
 }
 
+.logo {
+    width: 210px;
+    height: 110px;
+    float: left;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.about_company {
+    margin-top: 15px;
+    width: 200px;
+    text-align: center;
+    float: right;
+}
+
+.user {
+    margin-top: 24px;
+    width: auto;
+    height: auto;
+    text-align: right;
+    float: right; 
+    font-size: 17px;   
+}
+
+.user_text {
+    display: inline-block;
+}
+
+.user_text p {
+    width: auto;
+}
+
+/******************Container********************/
 .container {
     height: auto;
     float: left;
     display: flex;
 }
 
-/*****************Pages selection***************/
+/****************Syte navigation*****************/
 .navigation {
     width: 230px;
     border-bottom-style: solid;
     border-right-style: solid;
-    background-color: red;
     padding: 10px;  
 }
 
@@ -47,34 +81,39 @@ header {
 }
 
 .selection_button p {
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
+    margin: 0px 0px 0px 0px;
     font-size: 22px;
 }
 
 /***************Templates selection**************/
 .templates_selection {
     padding: 20px;
-    /*width: 1670px;*/
-    color: yellow;
-    background-color: blue;
     display: inline-block;
 }
 
 .templates_selection_header {
     height: 47px;
-    background-color: orange;
 }
 
 .template_item {
     width: 350px;
-    /*min-width: 350px;*/
     height: 250px;
     margin: 18px;
-    background-color: pink;
     float: left;
-    color: black;
+    border: 3px solid black;
 }
+
+.template_item h2 {
+    -webkit-margin-before: 10px;
+    -webkit-margin-after: 10px;
+}
+
+.text {
+    height: 120px;
+    overflow: auto;
+    padding: 0px 3px 0px 3px;
+}
+
 
 .questions_count {
     float: left;
@@ -91,13 +130,11 @@ header {
 .scroll_panel {
     height: 90px;
     clear: left;
-    background-color: green;
 }
 
 /*********************Footer*********************/
 footer {
     height:60px;
-    background-color: yellow;
     position:fixed;
     bottom:0;
     width:100%;
