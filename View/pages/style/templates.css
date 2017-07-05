@@ -3,6 +3,7 @@ body {
     display: block;
     border-width: 3px;
     text-align: center;
+    min-width: 660px;
 }
 
 a {
@@ -95,8 +96,11 @@ header {
 
 /*********************Footer*********************/
 footer {
-    height: 90px;
+    height:60px;
     background-color: yellow;
+    position:fixed;
+    bottom:0;
+    width:100%;
 }
 
 /**********************Groups********************/
